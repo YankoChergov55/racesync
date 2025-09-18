@@ -1,0 +1,17 @@
+import dotenv from "dotenv";
+
+dotenv.config({
+  quiet: true,
+});
+
+interface Config {
+  port: number;
+  nodeEnv: string;
+}
+
+const appConfig: Config = {
+  port: Number(process.env.PORT) || 3000,
+  nodeEnv: String(process.env.NODE_ENV),
+};
+
+export default appConfig;
