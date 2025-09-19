@@ -7,7 +7,7 @@ const app = eapp();
 
 app.get('/', (req, res) => {
 	res.json({
-		message: 'welcome to event vault',
+		message: 'welcome to race sync',
 	});
 });
 
