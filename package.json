@@ -1,12 +1,12 @@
 {
-	"name": "motorsport tracker",
+	"name": "racesync",
 	"version": "1.0.0",
 	"description": "An app that has all the information about scheduled motorsport events/race - WEC, F1, WRC, IMSA, GTWC etc.",
 	"main": "src/server.ts",
 	"scripts": {
 		"build": "tsc",
 		"start": "tsc && node dist/index.js",
-		"dev": "nodemon src/server.ts"
+		"dev": "tsc --noEmit && nodemon src/server.ts"
 	},
 	"type": "module",
 	"dependencies": {

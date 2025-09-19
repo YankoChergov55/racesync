@@ -33,6 +33,7 @@ enum RaceType {
 
 model Race {
   id             String   @id @default(cuid(2))
+  title          String
   championship   String
   type           RaceType
   location       String

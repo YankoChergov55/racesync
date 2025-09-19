@@ -1,4 +1,4 @@
-import appConfig from './src/config/appConfig.ts';
+import appConfig from './src/config/appConfig.js';
 import { PrismaClient } from '@prisma/client';
 
 declare global {

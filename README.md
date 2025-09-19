@@ -90,8 +90,8 @@ By completing this project, the developer will:
 - `PUT /races/edit/:id` → _(admin)_ edit race details
 - `DELETE /races/delete/:id` → _(admin)_ remove a race
 - `POST /races/follow/:id` → follow a race for a given user
-- `GET /races/:championship` → list races for a championship
-- `GET /races/date/:date` → list races on a given date
+- `GET /races/:id` → get race by id
+- `GET /races/params` → get a list of params based on parameters
 
 ---
 
