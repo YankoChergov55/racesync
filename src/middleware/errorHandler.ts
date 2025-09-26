@@ -10,6 +10,21 @@ interface errResponse {
 	err?: string;
 }
 
+/**
+ * Express global error-handling middleware.
+ *
+ * Logs encountered errors and sends a structured JSON error response.
+ *
+ * Handles both custom AppError instances and general Errors.
+ * In non-production, attaches stack trace information for debugging.
+ *
+ * @param {unknown} err - The error object passed from previous middleware or routes.
+ * @param {Request} req - The Express request object.
+ * @param {Response} res - The Express response object.
+ * @param {NextFunction} next - The next middleware function in the stack.
+ * @returns {void}
+ */
+
 const errorHandler: ErrorRequestHandler = (err: unknown, req: Request, res: Response, next: NextFunction) => {
 	logger.error(err);
 

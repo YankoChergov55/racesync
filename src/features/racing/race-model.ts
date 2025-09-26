@@ -93,15 +93,3 @@ export async function updateRaceData({ id, data }: { id: Race['id']; data: Prism
 export async function deleteRaceData(id: Race['id']) {
 	return prisma.race.delete({ where: { id } });
 }
-
-// export async function getRacesByType(type: Race['type']) {
-// 	return prisma.race.findMany({ where: { type } });
-// }
-
-// export async function getRacesByChampionship(championship: Race['championship']) {
-// 	return prisma.race.findMany({ where: { championship } });
-// }
-
-// export async function getRacesByDate(raceStartTime: Race['raceStartTime']) {
-// 	return prisma.race.findMany({ where: { raceStartTime } });
-// }

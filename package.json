@@ -12,14 +12,18 @@
 	"dependencies": {
 		"@paralleldrive/cuid2": "^2.2.2",
 		"@prisma/client": "^6.16.2",
+		"bcrypt": "^6.0.0",
 		"cookie-parser": "^1.4.7",
 		"dotenv": "^17.2.2",
-		"express": "^5.1.0"
+		"express": "^5.1.0",
+		"jsonwebtoken": "^9.0.2"
 	},
 	"devDependencies": {
 		"@eslint/js": "^9.35.0",
+		"@types/bcrypt": "^6.0.0",
 		"@types/cookie-parser": "^1.4.9",
 		"@types/express": "^5.0.3",
+		"@types/jsonwebtoken": "^9.0.10",
 		"@types/node": "^24.5.1",
 		"eslint": "^9.35.0",
 		"eslint-config-prettier": "^10.1.8",
